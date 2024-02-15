@@ -1,0 +1,59 @@
+/*Selector de etiqueta 0,0,1*/
+
+
+div{
+    background-color: red;
+    color: white;
+}
+
+/* Selector de Clase: 0,1,0
+El ID es un identificador, que no debe repetirse.
+Con el selector de clases si se puede repetir, es decir lo puede tener mas de un elemento
+y además un elemento puede tener varios selectores
+No deben haber espacios, simbolos... El símbolo asociado es el punto*/
+
+.black{
+    background-color: black;
+}
+
+.subrayado{
+    text-decoration: underline;
+}
+
+/* Selector de ID 1,0,0
+Con el # se selecciona id */
+#p1{
+    color: black;
+    background-color: yellowgreen;
+}
+
+#p1{
+    color: tomato;
+    background-color: grey;
+}
+
+/* Selectores combinados: 
+
+*/
+p{
+    color: blue;
+}
+.primerDiv > p {
+    font-size: 64px;
+    color: green;
+}
+
+/* si quiero que cumplan la norma sólo los hijos es con >
+.primerDiv > p {
+    font-size: 64px;
+    color: green;
+} */
+
+.p3{
+    text-decoration: underline;
+}
+
+/*pseudoclase*/
+.p3:hover{
+    color: aliceblue;
+}
