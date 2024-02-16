@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    border: 10px solid #08f834;
+    max-width: 80%;
+    height: 600px;
+    margin: 20px;
+    position: relative;
+}
+
+.position {
+    border: 5px solid black;
+    width: 100px;
+    height: 100px;
+}
+/* Por defecto en los div la propiedad es estatic, la propiedad se llama display 
+con la opción inline ocupa sólo el ancho de la palabra*/
+
+/* Static es la propiedad que tienen por defecto */
+.static{
+    background-color: rgba(226, 237, 15, 0.838);
+
+}
+/* permite referenciar un elemento de una forma absoluta, respecto a su contenedor, depende del relativ */
+.absolut{
+    background-color: rgb(252, 163, 153);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* El relativ le indica al absolut donde ubicarse*/
+.relativ{
+    background-color: aquamarine;
+    position: relative;
+    bottom:0;
+    left: 100px;
+}
+
+/* Se pposiciona respecto al viewport, fijo y siempre, se suele utilizar 
+ * para los menus  */
+.fixed{
+    background-color: rgb(253 128 238 /45%);
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+/* Se referencia respecto al padre y el scroll*/
+.sticky{
+    background-color: #00bfff75;
+    position: sticky;
+    top:0;
+    left:0;
+}
+
+.otro{
+    background-color: darkblue;
+    height: 200px;
+    width: 1000px;
+
+}

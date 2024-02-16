@@ -1,0 +1,42 @@
+body{
+    background: aqua;
+}
+/* flexbox es una forma de maquetar, a nivel unidemensional 
+ * se puede decidir hacia que direccion lo queremos con justify-conten
+ * por defecto esta a la izquierda
+ * justify-content: space-between los organiza
+ * justify-content: space-around los centra y organiza
+ * gap decide el espacio entre cada hijo
+ * si quiero que las indicaciones sean verticales entonces es flex-direction: column;
+ * para que cambien de orde row-reverse
+ * si la opcion es que mantengan el tamaño y no hay sitio la propiedad es wrap, evita la comprension del hijo
+ * 
+
+
+*/
+.padre{
+    background: white;
+    max-width: 90%;
+    height: 600px;
+    border: 10px solid blue;
+    display: flex;
+    justify-content: end;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+
+}
+
+.hijo{
+    background: gray;
+    border: 5px solid #ff0a0a;
+    width: 100px;
+    height: 100px;
+    /* se ajusta al contenido
+    display: inline; */
+}
